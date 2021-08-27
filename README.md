@@ -21,6 +21,13 @@ lpf_size = [7, 5, 3, 2]
 model_pbp = PBPUNet(n_channels=1, n_classes=1, lpf_size=lpf_size).to(device)
 ```
 
+# Datasets
+The list of three publicly available datasets employed in the paper:
+* First Ultrasound Dataset: [Breast Ultrasound Dataset B](http://www2.docm.mmu.ac.uk/STAFF/m.yap/dataset.php)
+* Second Ultrasound Dataset: [Breast Ultrasound Images Dataset (Dataset BUSI)](https://scholar.cu.edu.eg/?q=afahmy/pages/dataset)
+* Brain MRI Dataset: [LGG Segmentation Dataset](https://www.kaggle.com/mateuszbuda/lgg-mri-segmentation)
+
+
 ## Citations
 If you find this code useful for your research, please kindly cite the following papers:    
 * [Sharifzadeh, M., Benali, H. and Rivaz, H., 2021. Investigating Shift-Variance of Convolutional Neural Networks in Ultrasound Image Segmentation. arXiv preprint arXiv:2107.10431.](https://arxiv.org/abs/2107.10431)
