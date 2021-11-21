@@ -2,7 +2,7 @@
 Implementation of the networks used in the paper "Investigating Shift-Variance of Convolutional Neural Networks in Ultrasound Image Segmentation."
 
 ## Baseline
-The Vanilla U-Net, referred to as Baseline in the paper, where all four downsampling layers are conventional MaxPools (kernel=2×2, stride=2):
+The vanilla U-Net, referred to as Baseline in the paper, where all four downsampling layers are conventional MaxPools (kernel=2×2, stride=2):
 ```python
 lpf_size = None
 model_baseline = PBPUNet(n_channels=1, n_classes=1, lpf_size=lpf_size).to(device)
@@ -28,7 +28,8 @@ The list of three publicly available datasets employed in the paper:
 * Brain MRI Dataset: [LGG Segmentation Dataset](https://www.kaggle.com/mateuszbuda/lgg-mri-segmentation)
 
 
-## Citations
-If you find this code useful for your research, please kindly cite the following papers:    
+# Citations
+If you find this code useful for your research, please kindly cite the following papers:
+* [Sharifzadeh, M., Benali, H. and Rivaz, H., 2021, September. Shift-Invariant Segmentation in Breast Ultrasound Images. In 2021 IEEE International Ultrasonics Symposium (IUS) (pp. 1-4). IEEE.](https://ieeexplore.ieee.org/abstract/document/9593568)
 * [Sharifzadeh, M., Benali, H. and Rivaz, H., 2021. Investigating Shift-Variance of Convolutional Neural Networks in Ultrasound Image Segmentation. arXiv preprint arXiv:2107.10431.](https://arxiv.org/abs/2107.10431)
 * [Zhang, R., 2019, May. Making convolutional networks shift-invariant again. In International conference on machine learning (pp. 7324-7334). PMLR.](http://proceedings.mlr.press/v97/zhang19a.html)
